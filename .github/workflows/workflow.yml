@@ -75,3 +75,10 @@ jobs:
           plugin_habits_facts: yes
           plugin_habits_charts: yes
           config_timezone: Europe/Madrid
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.fullyear.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
